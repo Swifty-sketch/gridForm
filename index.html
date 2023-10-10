@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Marsel - Grid + form</title>
+</head> 
+<body>          
+
+        <form action = "https://httpbin.org/anything" method="post" class="form1" >
+
+          <div id = "text-div">
+            <h1>Sign<h1 id = "text-inside-div">Up</h1></h1>
+          </div>
+
+          <label for="firstName" class="first-name">First Name:</label>
+          <input name = "firstName" id="firstName" type="text">
+    
+          <label for="lastName" class="last-name">Last Name:</label>
+          <input name = "lastName" id="lastName" type="text">
+
+          <label for="pass-word" class="pass-word">Password:</label>
+          <input name = "pass-word" id="pass-word" type="password">
+    
+
+
+          <div>
+
+            <p>Please select your age</p>
+              <input name = "0-50age" type="checkbox">
+              <label for = "0-50age">0-50</label> <br>
+
+              <input name = "51-100age" type="checkbox">
+              <label for = "51-100age">51-100</label> <br>
+
+              <p>Please select your gender</p>
+              <input name = "male" type="radio">
+              <label for = "male">Male</label> <br>
+
+              <input name = "female" type="radio">
+              <label for = "femle">Female</label> <br>
+
+              <input name = "no-gender" type="radio">
+              <label for = "no-gender">None</label> <br>
+          </div>
+
+           <br> <input id = "submit-btn" type="submit" value="Submit">
+        </form>
+    
+</body>
+</html>
