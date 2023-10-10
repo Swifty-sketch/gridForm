@@ -1,33 +1,47 @@
+@font-face {
+  font-family: 'Oceanwide Semibold';
+  src: local('Oceanwide Semibold'), url('Oceanwide-Semibold.woff') format('woff');
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
 body{
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(49,49,63,1) 35%);    
+  background: rgb(148, 148, 152);
+  font-family: "Oceanwide Semibold";
+  src: local('Oceanwide Semibold'), url('Oceanwide-Semibold.woff') format('woff');
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 form {
   display: grid;
   padding: 1em;
-  background: #f9f9f9;
+  background: #dfdddd;
   border: 1px solid #c1c1c1;
-  width: 50%;
+  max-width: 25%;
+  min-width: 320px;
   margin: auto;
   margin-top: 5%;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
   
 }
+
 form input {
   background: #fff;
   border: 1px solid #9c9c9c;
 }
 #submit-btn{
-  background: lightgrey;
+  background: rgb(220, 102, 59);
   padding: 0.7em;
-  width: 15%;
+  width: 20%;
   border: 0;
   margin: auto;
+  color: white;
+  border-radius: 5px;
 }
+
 #submit-btn:hover {
-  background: rgb(160, 155, 155);
+  background: rgb(226, 131, 64);
 }
 
 label {
@@ -52,8 +66,17 @@ input {
 
 #text-div h1{
   display: inline;
+  font-weight: normal;
 }
 
 #text-inside-div{
-  color: rgb(66, 66, 96);
+  color: rgb(233, 159, 75);
+}
+
+i{
+  color: rgb(93, 90, 90);
+  width: 10px;
+  z-index: 1;
+  margin-bottom: -20px;
+  margin-left: 5px;
 }

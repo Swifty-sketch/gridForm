@@ -3,30 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+               -webkit-appearance: none;
+                margin: 0;
+        }
+    </style>
+
     <title>Marsel - Grid + form</title>
 </head> 
 <body>          
 
-        <form action = "https://httpbin.org/anything" method="post" class="form1" >
+  <form action="https://httpbin.org/anything" method="post" class="form1">
+    <div id="text-div">
+        <h1>Form<span id="text-inside-div">Get</span></h1>
+    </div>
 
-          <div id = "text-div">
-            <h1>Sign<h1 id = "text-inside-div">Up</h1></h1>
-          </div>
+        <label for="fullName" class="fullName">Full name:</label>
+        <input class = "icon-input" name="Fullname" id="fullName" type="name" placeholder="Full name">
 
-          <label for="firstName" class="first-name">First Name:</label>
-          <input name = "firstName" id="firstName" type="text">
+        <label for="pass-word" class="pass-word"> Password:</label>
+        <input class = "icon-input" name="pass-word" id="pass-word" type="password" placeholder="Password">
+
+        <label for="number" class="number"> Contact Number:</label>
+        <input class = "icon-input" name="number" id="lastName" type="number" placeholder="+460000000">
+
+
     
-          <label for="lastName" class="last-name">Last Name:</label>
-          <input name = "lastName" id="lastName" type="text">
-
-          <label for="pass-word" class="pass-word">Password:</label>
-          <input name = "pass-word" id="pass-word" type="password">
-    
-
-
           <div>
-
             <p>Please select your age</p>
               <input name = "0-50age" type="checkbox">
               <label for = "0-50age">0-50</label> <br>
@@ -46,6 +54,7 @@
           </div>
 
            <br> <input id = "submit-btn" type="submit" value="Submit">
+
         </form>
     
 </body>
